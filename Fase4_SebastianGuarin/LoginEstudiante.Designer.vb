@@ -116,7 +116,6 @@ Partial Class LoginEstudiante
         Me.Controls.Add(Me.Usuario)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.Name = "LoginEstudiante"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

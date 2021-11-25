@@ -26,6 +26,8 @@ Partial Class GestionAdmin
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GestionAdmin))
         Me.Regresar = New System.Windows.Forms.Button()
         Me.Txt_Email = New System.Windows.Forms.TextBox()
+        Me.EstudianteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.EstudiantesDataSet = New Fase4_SebastianGuarin.EstudiantesDataSet()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Txt_Direccion = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -59,14 +61,12 @@ Partial Class GestionAdmin
         Me.ContraseñaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CorreoElectrónicoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DirecciónDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EstudianteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.EstudiantesDataSet = New Fase4_SebastianGuarin.EstudiantesDataSet()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.EstudianteTableAdapter = New Fase4_SebastianGuarin.EstudiantesDataSetTableAdapters.EstudianteTableAdapter()
-        CType(Me.Edad, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EstudianteBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EstudiantesDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Edad, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Regresar
@@ -86,6 +86,16 @@ Partial Class GestionAdmin
         Me.Txt_Email.Name = "Txt_Email"
         Me.Txt_Email.Size = New System.Drawing.Size(121, 20)
         Me.Txt_Email.TabIndex = 50
+        '
+        'EstudianteBindingSource
+        '
+        Me.EstudianteBindingSource.DataMember = "Estudiante"
+        Me.EstudianteBindingSource.DataSource = Me.EstudiantesDataSet
+        '
+        'EstudiantesDataSet
+        '
+        Me.EstudiantesDataSet.DataSetName = "EstudiantesDataSet"
+        Me.EstudiantesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Label10
         '
@@ -384,16 +394,6 @@ Partial Class GestionAdmin
         Me.DirecciónDataGridViewTextBoxColumn.HeaderText = "Dirección"
         Me.DirecciónDataGridViewTextBoxColumn.Name = "DirecciónDataGridViewTextBoxColumn"
         '
-        'EstudianteBindingSource
-        '
-        Me.EstudianteBindingSource.DataMember = "Estudiante"
-        Me.EstudianteBindingSource.DataSource = Me.EstudiantesDataSet
-        '
-        'EstudiantesDataSet
-        '
-        Me.EstudiantesDataSet.DataSetName = "EstudiantesDataSet"
-        Me.EstudiantesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -448,10 +448,10 @@ Partial Class GestionAdmin
         Me.Name = "GestionAdmin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "GestionAdmin"
-        CType(Me.Edad, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EstudianteBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EstudiantesDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Edad, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

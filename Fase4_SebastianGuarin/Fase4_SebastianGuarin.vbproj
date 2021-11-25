@@ -186,9 +186,7 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Imágenes\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Estudiantes.mdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -197,6 +195,15 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>Estudiantes.mdf</DependentUpon>
     </Content>
+    <Content Include="Images\800px-VR-Helm.jpg" />
+    <Content Include="Images\candado.png" />
+    <Content Include="Images\futuristic-technological-wallpaper_79603-1091.jpg" />
+    <Content Include="Images\Light-blue-tech-background-vector-05-1.png" />
+    <Content Include="Images\papel-pintado-tecnologico-futurista_79603-1092.jpg" />
+    <Content Include="Images\programador.png" />
+    <Content Include="Images\rm380-06-knyga9fh.jpg" />
+    <Content Include="Images\salida.png" />
+    <Content Include="Images\sentiovr.jpg" />
     <Content Include="Usuarios.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -204,7 +211,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Usuarios.mdf</DependentUpon>
     </Content>
-    <Content Include="Videos\Realidad Virtual_ ¿Cómo funciona y Usos.mp4">
+    <Content Include="Videos\Realidad Virtual.mp4">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
